@@ -1,0 +1,144 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background: linear-gradient(to right, #21417C, #34A88E);
+    text-align: center;
+}
+header, main, footer {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+}
+
+button {
+    background-color: #80BC00;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+.inner{
+    background-color: rgb(19, 50, 107);
+    padding: .5rem;
+    
+}
+
+.chip {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #21417c;
+    background-image: url('https://media.istockphoto.com/id/481701668/vector/circuit-board-background-abstract-computers-technology.jpg?s=612x612&w=0&k=20&c=3hnHfGX8mKUPo32HEAwhGFqctervyJq85-kpopqIVUI=');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.chip:hover {
+    transform: scale(1.05);
+}
+
+
+.chip.selected {
+    background-color: #102030;
+    box-shadow: 0 0 10px #007bff;
+}
+
+
+#chip-mockups {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#generate-test {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#generate-test.active {
+    background-color: #007bff;
+    color: white;
+}
+
+
+[data-id="chip3"] .inner{
+    
+}
+
+[data-id="chip3"]{
+    filter: hue-rotate(-240deg);
+}
+
+/* Test results styling */
+#test-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: #007bff solid 2px;
+    width: fit-content;
+  }
+  
+  #test-list li {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #test-list li::before {
+    content: attr(data-status);
+    margin-right: 10px;
+  }
+  
+  #test-list li.passed::before {
+    color: #00cc00; /* Green color for passed tests */
+  }
+  
+  #test-list li.failed::before {
+    color: #cc0000; /* Red color for failed tests */
+  }

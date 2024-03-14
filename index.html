@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Enviromental testing simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Enviromental testing simulation</h1>
+    </header>
+
+    <!-- Chip Mockups
+     -->
+    <section id="chip-mockups">
+        <h2>Chip Mockups</h2>
+        <div class="chips-container">
+            <div class="chip" data-id="chip1">
+                <div class="inner">
+                    <h3>Chip 1</h3>
+                    <p>Operating Voltage: 5V</p>
+                    <p>Operating Humidity: 0% to 100%</p>
+                    <p>Operating Temperature: -40°C to 125°C
+                    </p>
+                </div>
+            </div>
+            <div class="chip" data-id="chip2">
+                <div class="inner">
+                    <h3>Chip 2</h3>
+                    <p>Operating Voltage: 3.3V</p>
+                    <p>Operating Humidity: 10% to 90%</p>
+                    <p>Operating Temperature: -20°C to 85°C
+                    </p>
+                </div>
+            </div>
+            <div class="chip" data-id="chip3">
+                <div class="inner">
+                    <h3>Defectuous Chip 3</h3>
+                    <p>Operating Voltage: 1.8V</p>
+                    <p>Operating Humidity: 20% to 80%</p>
+                    <p>Operating Temperature: -10°C to 70°C
+                    </p>
+                </div>
+            </div>
+            <div class="chip" data-id="chip4">
+                <div class="inner">
+                    <h3>Chip 4</h3>
+                    <p>Operating Voltage: 2.5V</p>
+                    <p>Operating Humidity: 5% to 95%</p>
+                    <p>Operating Temperature: -30°C to 100°C
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="generate-test">Select a
+            chip</button>
+        <section id="tests-section">
+            <h2>Test Progress</h2>
+            <ul id="test-list">
+                <!-- Test tasks will be dynamically added here -->
+            </ul>
+            <div id="progress"></div>
+        </section>
+
+
+    </section>
+
+
+</body>
+
+</html>
